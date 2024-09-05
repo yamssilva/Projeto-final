@@ -1,12 +1,12 @@
 import os
 from time import sleep 
 list = {
-    "fantasia": ["Harry potter e a pedra filosofal", "O Senhor dos Anéis", "A Canção de Gelo e Fogo"],
-    "romance": ["O Castelo Animado", "melhor do que nos filmes", "Orgulho e Preconceito"],
-    "distopia": ["O Jardim Secreto", "Jogos Vorazes", " 1984 "],
-    "aventura": ["Percy Jackson e os Olimpianos: O Ladrão de Raios", "O Hobbit", "As Aventuras de Huckleberry Finn"],
-    "terror": ["Coraline", "It: A Coisa", " O Iluminado "],
-    "poesia": ["O menino azul", "O sol é para todos", "Pra você que sente demais "],
+    "FANTASIA": ["Harry potter e a pedra filosofal", "O Senhor dos Anéis", "A Canção de Gelo e Fogo"],
+    "ROMANCE": ["O Castelo Animado", "melhor do que nos filmes", "Orgulho e Preconceito"],
+    "DISTOPIA": ["O Jardim Secreto", "Jogos Vorazes", " 1984 "],
+    "AVENTURA": ["Percy Jackson e os Olimpianos: O Ladrão de Raios", "O Hobbit", "As Aventuras de Huckleberry Finn"],
+    "TERROR": ["Coraline", "It: A Coisa", " O Iluminado "],
+    "POESIA": ["O menino azul", "O sol é para todos", "Pra você que sente demais "],
 }
 
 while True:
@@ -25,7 +25,7 @@ while True:
         print("Programa encerrado.") 
         break 
     elif escolha == 1:
-        gen = input("Digite um gênero entre: fantasia, romance, distopia, aventura, terror, poesia: ")
+        gen = input("Digite um gênero entre: fantasia, romance, distopia, aventura, terror, poesia: ").upper()
         idade=int(input("digite sua idade: "))
         livro_escolhido = ""
         if idade < 13:
