@@ -29,7 +29,7 @@ while True:
         idade=int(input("digite sua idade: "))
         livro_escolhido = ""
         if idade < 13:
-            livro_escolhido = list[gen][0] # gen é o texto "chave", valor é a lista td
+            livro_escolhido = list[gen][0] 
             sleep(0.5)
             os.system("cls")
         elif idade < 18:
